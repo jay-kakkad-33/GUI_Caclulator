@@ -37,7 +37,7 @@ def show_history(event=None):
         def show_exp(event=None):
             try:
                 exp.set(history_list.selection_get())
-                history_window.destroy()
+                history_window.destroy()*
             except:
                 messagebox.showerror("No selection","Please select a history to show")
         history_window.bind("<Double-Button-1>",show_exp)
@@ -206,3 +206,5 @@ keys_to_bind = {
 for key,event in keys_to_bind.items():
     calculator.bind(key,event)
 calculator.mainloop()
+
+#Commit Test 01
